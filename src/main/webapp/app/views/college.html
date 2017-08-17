@@ -1,0 +1,34 @@
+<div>
+    <input class="form-control" type="search" placeholder="" ng-model="searchText" ng-keypress="searchDone()" >
+</div><br>
+
+<div>
+    <h3>College Details</h3>
+    <div>
+      <table class='table' id="table-1">
+        <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Branches</th>
+       </tr>
+       <tr id="colleges" ng-repeat="college in allColleges | filter:searchText">
+       <td>{{college.code}}</td>
+       <td>{{college.name}}</td>
+       <td>{{college.city}}</td>
+        <td>
+          <table id="table-2">
+              <tr >
+                <td ng-repeat="branch in college.branches" title="{{branch.name}}"> <a >  {{branch.code}} |</a></span> </td>
+              </tr>
+            </table>
+        </td>
+          </tr>
+      </table>
+    </div>
+  <!--  <h3>Cutoff Details</h3>-->
+    <div id="chart-1" ></div>
+    </div>
+<script>
+
+</script>

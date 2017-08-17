@@ -1,0 +1,109 @@
+<style>
+  .typeahead-demo .custom-popup-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #f9f9f9;
+  }
+
+  .typeahead-demo .custom-popup-wrapper > .message {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    color: #868686;
+  }
+
+  .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+    position: static;
+    float: none;
+    display: block;
+    min-width: 160px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+</style>
+
+<script type="text/ng-template" id="customTemplate.html">
+  <a>
+      <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16">
+      <span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+  </a>
+</script>
+
+<script type="text/ng-template" id="customPopupTemplate.html">
+  <div class="custom-popup-wrapper"
+     ng-style="{top: position().top+'px', left: position().left+'px'}"
+     style="display: block;"
+     ng-show="isOpen() && !moveInProgress"
+     aria-hidden="{{!isOpen()}}">
+    <p class="message">select location from drop down.</p>
+
+    <ul class="dropdown-menu" role="listbox">
+      <li class="uib-typeahead-match" ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }"
+        ng-mouseenter="selectActive($index)" ng-click="selectMatch($index)" role="option" id="{{::match.id}}">
+        <div uib-typeahead-match index="$index" match="match" query="query" template-url="templateUrl"></div>
+      </li>
+    </ul>
+  </div>
+</script>
+
+
+
+<div class="container-fluid typeahead-demo" ng-controller="homeController">
+  <center><h4> College Details</h4></center>
+    <input type="text" ng-model="selected" uib-typeahead="colelge as (college.name + ' ' + college.code + ' ' + college.city ) for college in allColleges | filter:$viewValue | limitTo:12" class="form-control" autofocus="true" placeholder="Type your College Code / Name / City to search details " typeahead-on-select="fetchCollegeDetails($item, $model, $label, $event)" ng-keypress="searchDone()">
+    <!-- pre>Model: {{ selected | json }} - {{selected}}</pre> -->
+<br>
+ <div> <H4> <center>{{collegeName}}</center> </H4></div>
+ <div> <H4> <center>{{college_Code}}</center> </H4></div>
+
+<div id="accordion">
+
+  <h2>Branch Details</h2>
+  <div>
+
+    <table class='table' id="table" >
+      <tr>
+      <!--th x="C_Code">C_Code</th-->
+      <th x="Branch Name">Br</th>
+      <th x="Approved In Take">InTake</th>
+      <th x="Year Of Starting Of Course">YSC</th>
+      <th x="NBA Accredited">NBA Acc</th>
+      <th x="Accredition Valid Upto">Valid Till</th>
+     </tr>
+      <tr ng-repeat="branch in branches" >
+
+       <td>{{branch.name}}</td>
+       <td>{{branch.approvedintake}}</td>
+       <td>{{branch.yearofstartingofcourse}}</td>
+       <td>{{branch.nbaaccredited}}</td>
+       <td>{{branch.accreditionvalidupto}}</td>
+
+      </tr>
+    </table>
+  </div>
+  <h3>Cutoff Details</h3>
+  <div>
+    <table class='table' id="table_cutoff" >
+      <tr>
+      <th x="Branch Name">Br</th>
+      <th colsapn="7" >Cutoff Marks</th>
+
+     </tr>
+      <tr ng-repeat="branch in branches" >
+       <td>{{branch.name}}</td>
+       <td ng-repeat="cutoff in branch.cutoff"><a>{{cutoff.cname}} - {{cutoff.mark}}</a> </td>
+      </tr>
+    </table>
+
+    </div>
+  <h3>cutoff Details in Chart View</h3>
+  <div>
+  <div id="chart"></div>
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,19 @@
+<div>
+    <input class="form-control" type="search" placeholder="Search your branch here" ng-model="searchText" >
+</div><br>
+
+<div>
+    <h3>Branch Details</h3>
+    <div>
+      <table class='table' >
+        <tr>
+        <th>Code</th>
+        <th>Name</th>
+       </tr>
+       <tr ng-repeat="branch in allBranches | filter:searchText" >
+          <td>{{branch.code}}</td>
+          <td>{{branch.name}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>

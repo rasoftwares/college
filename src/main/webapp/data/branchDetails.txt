@@ -1,0 +1,31 @@
+        
+No Branch Code (In Alphabet i cal
+order of Branch)
+1 AI 60 2006 No --
+2 BY 60 2008 No --
+3 CE 60 1859 No --
+4 XC 60 2010 No --
+5 CS 60 1982 No --
+6 CM 120 2006 No --
+7 EE 60 1930 No --
+8 EM 120 2006 No --
+9 EC 60 1946 No --
+10 GI 60 1993 No --
+11 IE 60 1981 No --
+12 IM 120 2006 No --
+13 MN 60 1980 No --
+14 MA 60 2006 No --
+15 ME 120 1895 No --
+16 XM 60 2010 No --
+17 MI 30 1987 No --
+18 PT 60 1983 No --
+Approved
+Int ake
+Year of
+St art ing of
+Course
+Whet her NBA
+Accredi t ed
+  (Y/ N) 
+Accredi t at ion
+Val id Upt o

@@ -1,0 +1,67 @@
+[{
+	"code": "0001",
+	"name": "University Departments of Anna University",
+	"city": " Chennai – CEG Campus",
+	"branches": [{
+		"code": "AI",
+		"name": "Agricultural and Irrigation Engineering (SS)",
+		"cutoff": [{
+				"cname": "BC",
+				"mark": "89.5"
+			},
+			{
+				"cname": "MBC",
+				"mark": "89.5"
+			},
+			{
+				"cname": "ST",
+				"mark": "90.5"
+			},
+			{
+				"cname": "SC",
+				"mark": "89.5"
+			},
+			{
+				"cname": "OC",
+				"mark": "200"
+			}
+		],
+	  	"approvedintake": "60",
+			"yearofstartingofcourse": "1982",
+			"nbaaccredited": "No",
+			"accreditionvalidupto": "--"
+	}, {
+		"code": "BY",
+		"name": "Bio Medical Engg. (SS)",
+		"cutoff": [{
+				"cname": "BC",
+				"mark": "89.5"
+			},
+			{
+				"cname": "MBC",
+				"mark": "89.5"
+			},
+			{
+				"cname": "ST",
+				"mark": "90.5"
+			},
+			{
+				"cname": "SC",
+				"mark": "89.5"
+			},
+			{
+				"cname": "OC",
+				"mark": "200"
+			}
+		],
+	  "approvedintake": "60",
+		"yearofstartingofcourse": "1982",
+		"nbaaccredited": "No",
+		"accreditionvalidupto": "--"
+	}],
+  "headerDetails": " 0001 UNIVERSITY DEPARTMENTS OF ANNA UNIVERSITY, CHENNAI - CEG CAMPUS\n",
+	"collegeDetails": "Name of the\nPrincipal/Dean Dr. P. Narayanasamy\n Address Sardar Patel Road, Guindy, Chennai(Dt.), Pin -\nBank A/c No. --\n600025\nBank Name --\n Phone 044-22358491 Distance in KM from Dist.HQ. 10\n Fax 044-22301357 Nearest Railway Station Guindy/Kasthuribai Nagar\n  Email-Id deanceg@annauniv.edu\nDistance in KM from Nearest 3/1.5\n  Website www.annauniv.edu Railway Station\n",
+	"hostelDetails": "HOSTEL FACILITIES Boys Girls\nAccommodation Available for  UG Yes Yes\nPermanent or Rental ( P / R ) Permanent Permanent\nType of Mess ( Veg / NV ) Veg/Non-Veg Veg/Non-Veg\nMess  Bill in Rs./Month (Approx) Dividing Dividing\nRoom Rent (Rs./Year) 600 600\nElectricity Charges  (Rs./Year) 1120 1120\nCaution Deposit in Rs. 4500 4500\nEstablishment Charges (Rs./Yr) 13500 13500\nAdmission Fee ( Rs. / Yr ) 600 600\nTransport Facilities (Y/N) No\nTransport Optional or Compulsory --\nMin Transport Charges  / Year in Rs. --\nMax Transport Charges / Year in Rs. --\nMinority Status No\n",
+	"branchDetails": "\nNo Branch Code (In Alphabet i cal\norder of Branch)\n1 AI 60 2006 No --\n2 BY 60 2008 No --\n3 CE 60 1859 No --\n4 XC 60 2010 No --\n5 CS 60 1982 No --\n6 CM 120 2006 No --\n7 EE 60 1930 No --\n8 EM 120 2006 No --\n9 EC 60 1946 No --\n10 GI 60 1993 No --\n11 IE 60 1981 No --\n12 IM 120 2006 No --\n13 MN 60 1980 No --\n14 MA 60 2006 No --\n15 ME 120 1895 No --\n16 XM 60 2010 No --\n17 MI 30 1987 No --\n18 PT 60 1983 No --\nApproved\nInt ake\nYear of\nSt art ing of\nCourse\nWhet her NBA\nAccredi t ed\n  (Y/ N) \nAccredi t at ion\nVal id Upt o\n"
+}
+]

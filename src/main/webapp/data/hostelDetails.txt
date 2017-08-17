@@ -1,0 +1,15 @@
+HOSTEL FACILITIES Boys Girls
+Accommodation Available for  UG Yes Yes
+Permanent or Rental ( P / R ) Permanent Permanent
+Type of Mess ( Veg / NV ) Veg/Non-Veg Veg/Non-Veg
+Mess  Bill in Rs./Month (Approx) Dividing Dividing
+Room Rent (Rs./Year) 600 600
+Electricity Charges  (Rs./Year) 1120 1120
+Caution Deposit in Rs. 4500 4500
+Establishment Charges (Rs./Yr) 13500 13500
+Admission Fee ( Rs. / Yr ) 600 600
+Transport Facilities (Y/N) No
+Transport Optional or Compulsory --
+Min Transport Charges  / Year in Rs. --
+Max Transport Charges / Year in Rs. --
+Minority Status No
